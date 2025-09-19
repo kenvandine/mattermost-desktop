@@ -1,5 +1,7 @@
 #!/bin/sh
 
+WAYLAND_OPTS=""
+
 if [ -n "$WAYLAND_DISPLAY" ] && [ -z "$DISABLE_WAYLAND" ]; then
   WAYLAND_OPTS="--enable-features=UseOzonePlatform --ozone-platform-hint=auto"
 fi
